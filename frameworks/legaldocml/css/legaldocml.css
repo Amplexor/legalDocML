@@ -187,7 +187,8 @@ an|article > an|paragraph > * {
   margin-left: 10%;
 }
 an|article > an|paragraph > an|num {
-  position: absolute;
+  position: relative;
+  top: 20px;
   -oxy-display-tags: none;
   max-width: 10%;
   margin-left: 0;
@@ -203,6 +204,9 @@ an|mainBody > an|tblock > an|num {
 }
 an|mainBody > an|tblock > an|num:after {
   content: " ";
+}
+an|mainBody > an|tblock > an|num + :not(heading) {
+  padding-left: 7%;
 }
 an|mainBody > an|tblock > an|heading {
   font-weight: bold;
@@ -227,6 +231,9 @@ an|mainBody > an|tblock > an|tblock > an|num {
 an|mainBody > an|tblock > an|tblock > an|num:after {
   content: " ";
 }
+an|mainBody > an|tblock > an|tblock > an|num + :not(heading) {
+  padding-left: 7%;
+}
 an|mainBody > an|tblock > an|tblock > an|heading {
   font-weight: bold;
   padding-left: 15%;
@@ -246,6 +253,9 @@ an|mainBody > an|tblock > an|tblock > an|tblock > an|num {
 }
 an|mainBody > an|tblock > an|tblock > an|tblock > an|num:after {
   content: " ";
+}
+an|mainBody > an|tblock > an|tblock > an|tblock > an|num + :not(heading) {
+  padding-left: 7%;
 }
 an|mainBody > an|tblock > an|tblock > an|tblock > an|heading {
   font-weight: bold;
@@ -268,7 +278,8 @@ an|recitals > an|recital > * {
   margin-left: 10%;
 }
 an|recitals > an|recital > an|num {
-  position: absolute;
+  position: relative;
+  top: 20px;
   -oxy-display-tags: none;
   max-width: 10%;
   margin-left: 0;
@@ -286,7 +297,8 @@ an|blockList > an|item > * {
   margin-left: 10%;
 }
 an|blockList > an|item > an|num {
-  position: absolute;
+  position: relative;
+  top: 20px;
   -oxy-display-tags: none;
   max-width: 10%;
   margin-left: 0;
@@ -304,7 +316,8 @@ an|list > an|point > * {
   margin-left: 10%;
 }
 an|list > an|point > an|num {
-  position: absolute;
+  position: relative;
+  top: 20px;
   -oxy-display-tags: none;
   max-width: 10%;
   margin-left: 0;
